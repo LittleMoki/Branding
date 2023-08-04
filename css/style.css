@@ -1,0 +1,279 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: white;
+  }
+
+  body {
+    background-color: #070707;
+    width: 100%;
+    height: 100vh;
+  }
+
+  
+
+
+  /* main */
+
+  .main {
+    margin-top: 50px;
+  }
+
+  .main__container {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    color: white;
+    margin-left: 170px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .content h1 {
+    color: #F0F0F0;
+    font-family: Montserrat;
+    font-size: 82px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 95%;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+  }
+
+  .content h1 span {
+    color: #FFC700;
+    font-family: Montserrat;
+    font-size: 82px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 95%;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px #FFC700;
+  }
+
+  .content p {
+    color: #A8A8A8;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 500px;
+  }
+
+  .content a button {
+    border: 0;
+    width: 200px;
+    height: 60px;
+    background: #FFC700;
+    color: #1C1C1C;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-top: 46px;
+    transition: all .3s ease-in-out;
+  }
+
+  .content a button:hover {
+    background-color: #000;
+    color: #ffc700;
+    border: 1px solid #ffc700;
+  }
+
+
+  .content__right-man {
+    max-width: 640px;
+    margin-right: 70px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .content__right-man-item::after {
+    content: '';
+    width: 640px;
+    height: 62%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.43%, rgba(0, 0, 0, 0.60) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  .content__right-img {
+    position: relative;
+  }
+
+
+  .content__line {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+    width: 1200px;
+    right: -90px;
+    bottom: 10px;
+  }
+
+
+
+
+
+  /* top-sels */
+
+  .top-sels {
+    margin-top: 250px;
+  }
+
+
+
+
+
+
+
+
+
+  /* adaptive */
+  @media(max-width:1400px) {
+    .content {
+      margin-left: -10px;
+    }
+
+    .content__right-man {
+      max-width: 560px;
+      margin-left: -110px;
+    }
+
+    .content__line {
+      max-width: 900px;
+      right: -95px;
+    }
+
+    .content__right-man-item::after {
+      left: -70px;
+    }
+  }
+
+
+  @media (max-width:1140px) {
+    .content h1 {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    .content h1 span {
+      font-size: 60px;
+    }
+
+    .content p {
+      font-size: 20px;
+      max-width: 350px;
+    }
+
+    .content a button {
+      width: 160px;
+      height: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    .content__right-man {
+      max-width: 400px;
+      margin-left: -110px;
+    }
+
+    .content__line {
+      max-width: 700px;
+      right: -115px;
+    }
+
+    .content__right-man-item::after {
+      left: -90px;
+    }
+
+    .navbar__link {
+      font-size: 16px;
+    }
+
+    .navbar__container {
+      gap: 20px;
+    }
+
+    .action__right {
+      display: none;
+    }
+
+    .action__bcg {
+      height: 500px;
+    }
+
+    .action__content {
+      margin-top: 0px;
+    }
+
+    .action__wrapper {
+      margin-top: -50px;
+    }
+
+    .black::after {
+      top: 70px;
+      position: relative;
+    }
+  }
+
+  @media (max-width:870px) {
+    .content__right-man {
+      display: none;
+    }
+
+    .content__line {
+      display: none;
+    }
+
+    .content__right-man-item::after {
+      display: none;
+    }
+
+    .content h1 {
+      font-size: 82px;
+      font-weight: 800;
+      margin-bottom: 36px;
+    }
+
+    .content h1 span {
+      font-size: 82px;
+      font-weight: 800;
+    }
+
+    .content p {
+      font-size: 24px;
+      max-width: 500px;
+    }
+
+    .content a button {
+      width: 200px;
+      height: 60px;
+      font-size: 20px;
+      font-weight: 800;
+      margin-top: 46px;
+    }
+  }

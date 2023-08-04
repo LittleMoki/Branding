@@ -1,0 +1,116 @@
+.header {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;  
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.header__top-search label input {
+  width: 220px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #FFF;
+  background-color: #090909;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 32px;
+  position: relative;
+}
+
+.header__top-search {
+  position: relative;
+}
+
+.header__top-search-item {
+  position: absolute;
+  width: 20px;
+  z-index: 2;
+  top: 5px;
+  left: 10px;
+}
+
+.navbar__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  margin-top: 20px;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.navbar__link {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  position: relative;
+}
+
+.navbar__link:hover {
+  color: #090909;
+}
+
+.navbar__link:hover::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  background: url(../../assets/images/header/Rectangle\ 62.svg) no-repeat;
+  background-size: cover;
+  width: 160px;
+  height: 38px;
+  left: -43px;
+  top: -10px;
+}
+
+.header__top-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__top-right ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.langBtn {
+  color: #868686;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.langBtn.active {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

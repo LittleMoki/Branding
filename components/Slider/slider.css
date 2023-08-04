@@ -1,0 +1,212 @@
+
+  /* exaples */
+  .exaples {
+    max-width: 1440px;
+    margin: 0 auto;
+    color: #fff;
+  }
+
+  .content__wrapper {
+    margin-left: 120px;
+  }
+
+  .title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .title span {
+    color: #FFC700;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .subtitle {
+    color: #B8B8B8;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  /* slider */
+  .swiper {
+    overflow: hidden;
+  }
+
+  .swiper-item {
+    min-width: 500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .swiper-item::after {
+    content: '';
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    z-index: -1;
+    background: url(../../assets/images/exaples/slider/Polygon\ 7.png) no-repeat;
+    top: 60px;
+    left: 140px;
+  }
+
+  .swiper-item::before {
+    content: '';
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    background: url(../../assets/images/exaples/slider/mask.png) no-repeat;
+    z-index: -2;
+    top: 10px;
+    left: 10px;
+  }
+
+  .swiper-logo {
+    position: absolute;
+    width: 135px;
+    height: 65px;
+    background: url(../../assets/images/exaples/logo/logo.png) no-repeat;
+    bottom: 50px;
+    right: 130px;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next:after {
+    color: #fff;
+  }
+
+
+
+  /* action */
+  .action {
+    max-width: 1400px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+  }
+
+  .action__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 120px;
+  }
+
+
+  .action__bcg {
+    transform: skew(0deg, -7deg);
+    background-color: #FFC700;
+    max-width: 1440px;
+    position: absolute;
+    z-index: -5;
+    top: 30px;
+    margin: 0 auto; 
+  }
+
+  .action__content {
+    max-width: 600px;
+    margin-top: 250px;
+  }
+
+  .action__wrapper {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+
+  .action__title {
+    color: #252525;
+    font-family: Montserrat;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .action__subtitle {
+    color: #262626;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px;
+    margin-bottom: 34px;
+  }
+
+  .action__btn {
+    width: 200px;
+    height: 60px;
+    background-color: #0F0F0F;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    text-transform: uppercase;
+    border: 0;
+    color: white;
+    transition: all .3s ease-in-out;
+  }
+
+  .action__btn:hover {
+    background-color: #FFC700;
+    border: 2px solid black;
+    color: black;
+  }
+
+  .btn-black {
+    color: #000;
+  }
+
+  .action__right-img-item {
+    margin-top: 80px;
+  }
+
+  .action__right-img {
+    background: url(../../assets/images/action/Polygon\ 7\ \(1\).png) no-repeat;
+    width: 450px;
+    position: relative;
+  }
+
+  .action__right-img::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    z-index: -1;
+    background: url(../../assets/images/exaples/slider/mask.png) no-repeat;
+    background-size: contain;
+    top: 12px;
+    left: -106px;
+  }
+
+  .action__right-item {
+    background: url(../../assets/images/header/logo/logo.png)no-repeat;
+    height: 63px;
+    margin-left: 220px;
+    margin-top: 10px;
+  }
+
+
+  /* swiper-button-prev black */
+  .black::after {
+    color: #000;
+  }
