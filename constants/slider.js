@@ -1,43 +1,23 @@
 const SLIDER = [
   {
     id:'el1',
-    img:'../assets/images/exaples/slider/x-8001.png'
+    img:'https://i.postimg.cc/L57P9NbD/yellow-T-shirt.png'
   },
   {
-    id:'el2',
-    img:'../assets/images/exaples/slider/x-8001.png'
+    id:'el1',
+    img:'https://i.postimg.cc/L57P9NbD/yellow-T-shirt.png'
   },
   {
-    id:'el3',
-    img:'../assets/images/exaples/slider/x-8001.png'
+    id:'el1',
+    img:'https://i.postimg.cc/L57P9NbD/yellow-T-shirt.png'
   },
   {
-    id:'el4',
-    img:'../assets/images/exaples/slider/x-8001.png'
+    id:'el1',
+    img:'https://i.postimg.cc/L57P9NbD/yellow-T-shirt.png'
   },
   {
-    id:'el5',
-    img:'../assets/images/exaples/slider/x-8001.png'
-  },
-  {
-    id:'el6',
-    img:'../assets/images/exaples/slider/x-8001.png'
-  },
-  {
-    id:'el7',
-    img:'../assets/images/exaples/slider/x-8001.png'
-  },
-  {
-    id:'el8',
-    img:'../assets/images/exaples/slider/x-8001.png'
-  },
-  {
-    id:'el9',
-    img:'../assets/images/exaples/slider/x-8001.png'
-  },
-  {
-    id:'el10',
-    img:'../assets/images/exaples/slider/x-8001.png'
+    id:'el1',
+    img:'https://i.postimg.cc/L57P9NbD/yellow-T-shirt.png'
   },
 ]
 
@@ -67,12 +47,12 @@ const SLIDERACTION = [
 
 const SLIDERREVIEW = [
   {
-    img:'../assets/images/review/mockup.png'
+    img:'https://i.postimg.cc/xCgf38Gb/mockup.png'
   },
   {
-    img:'../assets/images/review/mockup.png'
+    img:'https://i.postimg.cc/xCgf38Gb/mockup.png'
   },
   {
-    img:'../assets/images/review/mockup.png'
+    img:'https://i.postimg.cc/xCgf38Gb/mockup.png'
   },
 ]
