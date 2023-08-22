@@ -1,10 +1,7 @@
 .header {
-  max-width: 1440px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  width: 80%;  
 }
 
 .container {
@@ -21,6 +18,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  padding: 0 170px;
 }
 
 .header__top-search label input {
@@ -53,10 +51,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 90px;
+  gap: 50px;
   margin-top: 20px;
-  max-width: 1440px;
-  width: 100%;
 }
 
 .navbar__link {
@@ -79,11 +75,11 @@
   z-index: -1;
   position: absolute;
   background: url(../../assets/images/header/Rectangle\ 62.svg) no-repeat;
-  background-size: cover;
-  width: 160px;
+  background-size: contain;
+  width: 140px;
   height: 38px;
-  left: -43px;
-  top: -10px;
+  left: -30px;
+  top: -5px;
 }
 
 .header__top-right {
@@ -99,6 +95,8 @@
   gap: 10px;
 }
 
+
+
 .langBtn {
   color: #868686;
   font-size: 16px;
@@ -113,4 +111,104 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+
+/* main */
+
+.main {
+  margin-top: 50px;
+}
+
+.main__container {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.content {
+  color: white;
+  margin-left: 170px;
+  position: relative;
+  z-index: 5;
+}
+
+.content h1 {
+  color: #F0F0F0;
+  font-family: Montserrat;
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 95%;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+
+.content h1 span {
+  color: #FFC700;
+  font-family: Montserrat;
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 95%;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 10px #FFC700;
+}
+
+.content p {
+  color: #A8A8A8;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 500px;
+}
+
+.content a button {
+  border: 0;
+  width: 200px;
+  height: 60px;
+  background: #FFC700;
+  color: #1C1C1C;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-top: 46px;
+  transition: all .3s ease-in-out;
+}
+
+.content a button:hover {
+  background-color: #000;
+  color: #ffc700;
+  border: 1px solid #ffc700;
+}
+
+
+.content__right-man {
+  max-width: 640px;
+  margin-right: 70px;
+  z-index: 1;
+  position: relative;
+}
+
+.content__right-img {
+  position: relative;
+}
+
+
+.content__line {
+  content: '';
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+  width: 1200px;
+  right: -90px;
+  bottom: 10px;
 }

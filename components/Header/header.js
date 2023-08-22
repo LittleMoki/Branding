@@ -64,11 +64,10 @@ class Header {
     });
 
     const html = `
-    <header id="header" class="header">
+    
       <div class="container">
       ${htmlHeader}
       </div>
-      </header>
     `;
 
     ROOT_HEADER.innerHTML = html;

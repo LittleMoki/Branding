@@ -5,7 +5,7 @@ class Slider {
       htmlSlider += `
       <div class="swiper-slide">
           <div class="swiper-item">
-                <img src="${img}" /><span class="swiper-logo"></span>
+            <img src="${img}" alt="#"/><span class="swiper-logo"></span>
         </div>
       </div>
       `;
@@ -33,13 +33,13 @@ class Slider {
 const sliderPage = new Slider();
 sliderPage.render();
 
-class SliderAction{
-  render(){
+class SliderAction {
+  render() {
     let htmlSliderAction = ''
-    SLIDERACTION.forEach(({id ,title ,subtitle ,button ,img})=>{
-      htmlSliderAction +=`
-      <div class="swiper-slide">
-              <div class="action__wrapper">
+    SLIDERACTION.forEach(({ id, title, subtitle, button, img }) => {
+      htmlSliderAction += `
+            <div class="swiper-slide">
+              -*<div class="action__wrapper">
                 <div class="action__content">
                   <h1 class="action__title">${title}</h1>
                   <p class="action__subtitle">
@@ -96,3 +96,40 @@ class SliderAction{
 
 const slideAction = new SliderAction();
 slideAction.render();
+
+class SliderReview {
+  render() {
+    let htmlReview = ''
+    SLIDERREVIEW.forEach(({ img }) => {
+      htmlReview += `
+          <div class="swiper-slide">
+            <div class="review__dynm"><img src="${img}" alt=""></div>
+          </div>
+      `
+    })  
+
+    const html = `
+    <h2 class="content-title review__title">От<span>зы</span>вы</h2>
+      <p class="content-subtitle">
+        Только посмотри что о нас говорит <br />
+        твоя соседка
+      </p>
+
+      <div class="review__fixed">
+      <div class="review__bgc"></div>
+      <img src="assets/images/review/main.png" alt="" class="review__img">
+    </div>
+      <div class="swiper review__swiper">
+      <div class="swiper-wrapper">
+          ${htmlReview}
+        </div>
+      </div>
+    `
+
+    ROOT_REVIEW.innerHTML = html
+
+  }
+}
+
+const reviewPage = new SliderReview()
+reviewPage.render()

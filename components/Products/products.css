@@ -35,7 +35,6 @@
    max-width: 1440px;
    display: flex;
    justify-content: center;
-   align-items: center;
    flex-wrap: wrap;
    padding: 0 20px;
    gap: 20px;
@@ -51,10 +50,11 @@
  .card__box {
    width: 335px;
    padding: 30px 50px;
-   margin-bottom: 150px;
+   margin-bottom: 30px;
    box-shadow: inset 0px 0px 10px 15px #1C1C1C;
    position: relative;
    transition: all .3s ease-in-out;
+   cursor: pointer;
  }
 
  .card__box:hover {
@@ -114,6 +114,7 @@
    margin-bottom: 45px;
    position: relative;
    transition: all .5s ease-in-out;
+   cursor: pointer;
  }
 
  .card__btn.card__btn--active {
@@ -134,4 +135,142 @@
    left: 0;
    background-color: #FFC700;
    color: #171717;
+ }
+
+ /* topSels */
+
+ .top-sels {
+   max-width: 1440px;
+   margin: 100px auto;
+ }
+
+ .top-sels__navbar {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   flex-wrap: wrap;
+   gap: 40px;
+   min-width: 100%;
+   height: 80px;
+ }
+
+ .top-sels__item {
+   display: flex;
+   align-items: center;
+ }
+
+ .top-sels__link {
+   color: #FFF;
+   text-align: center;
+   font-family: Montserrat;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   position: relative;
+   transition: all .5s ease-in-out;
+   z-index: 1;
+ }
+
+ .top-sels__link:hover {
+   background: #FFC700;
+   padding: 5px 10px;
+   color: #070707;
+   text-align: center;
+   font-family: Montserrat;
+   font-size: 24px;
+   font-weight: 600;
+ }
+
+ .top-sels__catalog {
+   width: 100%;
+   margin-top: 90px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+ }
+
+ .top-sels__cards {
+   flex-basis: calc(100%/4);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   margin-bottom: 200px;
+   border: 1px solid white;
+ }
+
+ .top-sels__card {
+   min-width: 300px;
+   height: 350px;
+ }
+
+ .top-sels__card-img {
+   object-fit: contain;
+   width: 100%;
+   height: 100%;
+ }
+
+ .top-sels__card-subtitle {
+   text-align: center;
+   color: #FFF;
+   text-align: center;
+   font-family: Montserrat;
+   font-size: 20px;
+   font-weight: 300;
+   margin-top: 30px;
+ }
+
+ .top-sels__card-cost {
+   text-align: center;
+   color: #F0F0F0;
+   text-align: center;
+   font-family: Montserrat;
+   font-size: 24px;
+   font-weight: 700;
+ }
+
+ /* catalog */
+ .catalog {
+   max-width: 1440px;
+   margin: 0 auto;
+ }
+
+ .catalog__cards {
+   display: flex;
+   color: #fff;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+ }
+
+ .catalog__card-wrapper {
+   text-align: center;
+   padding: 50px;
+   /* background-color: #101010; */
+   /* border: 1px solid white; */
+   box-shadow: inset 0px 0px 10px 15px #1C1C1C;
+ }
+
+
+ .catalog__card {
+   flex-basis: calc(100%/4);
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .catalog__card-img {
+   height: 240px;
+ }
+
+ .catalog__card-title {
+   text-align: center;
+ }
+
+ .catalog__card-subtitle {
+   text-align: center;
  }

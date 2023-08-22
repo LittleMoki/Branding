@@ -64,3 +64,15 @@ const SLIDERACTION = [
     img:'assets/images/action/t-shirt.png'
   },
 ]
+
+const SLIDERREVIEW = [
+  {
+    img:'../assets/images/review/mockup.png'
+  },
+  {
+    img:'../assets/images/review/mockup.png'
+  },
+  {
+    img:'../assets/images/review/mockup.png'
+  },
+]

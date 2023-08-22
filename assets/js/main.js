@@ -29,13 +29,22 @@ cardBoxes.forEach((document) => {
   const cardBtn = document.querySelector(".card__btn");
 
   document.addEventListener("mouseover", () => {
-    cardBtn.classList.add("card__btn--active");
+    // cardBtn.classList.add("card__btn--active");
+    cardBtn.style.backgroundColor = "#FFC700";
+    cardBtn.style.color = "#fff";
   });
 
   document.addEventListener("mouseleave", () => {
-    cardBtn.classList.remove("card__btn--active");
+    // cardBtn.classList.remove("card__btn--active");
+    cardBtn.style.backgroundColor = "#171717";
   });
 });
+
+// Product
+
+
+
+
 
 // Swiper
 
@@ -66,6 +75,21 @@ new Swiper(".exaples__swiper", {
 });
 new Swiper(".swiper__action", {
   spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  mousewhell: true,
+  keyboard: true,
+  speed: 1000,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+});
+
+new Swiper(".review__swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
